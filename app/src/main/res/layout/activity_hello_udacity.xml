@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:label="HelloUdacity"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.android.helloandroid.HelloUdacity">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/udacity_gif"
+        android:scaleX="0.99"
+        android:scaleY="0.7" />
+
+ <TextView
+     android:id="@+id/businessName"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Udacity"
+     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+     android:fontFamily="cursive"
+     android:textStyle="bold|italic"
+     android:textColor="#e81d12"
+     android:layout_above="@+id/streetAddress"/>
+
+ <TextView
+    android:id="@+id/streetAddress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2465 Latham St"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+    android:fontFamily="cursive"
+     android:textStyle="bold|italic"
+    android:textColor="#e81d12"
+    android:layout_above="@+id/cityName"
+    />
+
+ <TextView
+     android:id="@+id/cityName"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Mountain View"
+     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+     android:fontFamily="cursive"
+     android:textStyle="bold|italic"
+     android:textColor="#e81d12"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true" />
+
+ <TextView
+     android:id="@+id/phoneNo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="650-555-5555"
+     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+     android:fontFamily="monospace"
+     android:textStyle="bold"
+     android:textColor="#e81d12"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
